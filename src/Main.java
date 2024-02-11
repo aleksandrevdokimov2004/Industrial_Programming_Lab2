@@ -6,9 +6,8 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
         Random rd = new Random();
-        System.out.printf("Задание 1\nНайти число, цифры в котором идут в строгом порядке" +
-                "возрастания. Если таких чисел несколько, найти первое из них.\n");
-        System.out.printf("Введите количество чисел:\t");
+        System.out.print("Задание 1\nНайти число, цифры в котором идут в строгом порядке возрастания. Если таких чисел несколько, найти первое из них.\n");
+        System.out.print("Введите количество чисел:\t");
         int count = in.nextInt();
 
         int[] arrayNumbers = new int[count];
@@ -17,22 +16,20 @@ public class Main {
             arrayNumbers[i] = in.nextInt();
         }
 
-
         System.out.printf("Первое найденное число, чьи цифры расположены в возрастающем порядке:\t %d\n", Task1.solution(arrayNumbers, count));
 
-        System.out.printf("Задание 2\nНаписать код программы, которая бы переводила числа из" +
-                "десятичной системы счисления в любую другую.\n");
+        System.out.print("Задание 2\nНаписать код программы, которая бы переводила числа из десятичной системы счисления в любую другую.\n");
 
-        System.out.printf("Введите число для перевода из десятичной СС в нужную СС:\t");
+        System.out.print("Введите число для перевода из десятичной СС в нужную СС:\t");
         int number = in.nextInt();
-        System.out.printf("Нужная СС:\t");
+        System.out.print("Нужная СС:\t");
         int to = in.nextInt();
 
         System.out.printf("Переведённое число:\t %s\n", Task2.deqToN(number,to));
 
-        System.out.printf("Задание 3\nВычислить определитель матрицы.\n");
+        System.out.print("Задание 3\nВычислить определитель матрицы.\n");
 
-        System.out.printf("Введите размер матрицы:\t");
+        System.out.print("Введите размер матрицы:\t");
         int size = in.nextInt();
 
         double[][] matrix = new double[size][size];
@@ -42,13 +39,13 @@ public class Main {
                 matrix[i][j] = rd.nextInt(0, 10);
             }
 
-        System.out.printf("Ваша матрица:\n");
+        System.out.print("Ваша матрица:\n");
 
         for(int i =0; i<size; i++){
             for(int j = 0; j<size; j++){
                 System.out.printf("%.1f\t", matrix[i][j]);
             }
-            System.out.printf("\n");
+            System.out.print("\n");
         }
 
         System.out.printf("\nОпределитель матрицы:\t %s", Task3.determinant(matrix));
