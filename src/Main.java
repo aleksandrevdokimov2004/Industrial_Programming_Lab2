@@ -48,7 +48,7 @@ public class Main {
             System.out.print("\n");
         }
 
-        System.out.printf("\nОпределитель матрицы:\t %s", Task3.determinant(matrix));
+        System.out.printf("Определитель матрицы:\t %s", Task3.determinant(matrix));
         in.close();
     }
 }
