@@ -36,7 +36,7 @@ public class Main {
 
         for(int i =0; i<size; i++)
             for(int j = 0; j<size; j++){
-                matrix[i][j] = rd.nextInt(0, 10);
+                matrix[i][j] = rd.nextDouble(size, size);
             }
 
         System.out.print("Ваша матрица:\n");

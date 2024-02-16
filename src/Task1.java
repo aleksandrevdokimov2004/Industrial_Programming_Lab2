@@ -9,9 +9,8 @@ public class Task1 {
                 if (lastDigit == -1) {
                     lastDigit = currentNumber % 10;
                     currentNumber /= 10;
-                    continue;
                 }
-                if (currentNumber % 10 > lastDigit)
+                else if (currentNumber % 10 > lastDigit)
                     isGroing = false;
 
                 else {
