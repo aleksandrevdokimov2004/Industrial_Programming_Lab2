@@ -36,7 +36,7 @@ public class Task3 {
                     }
                 }
             }
-            result += arr[0][i] * Math.pow(-1, i) * findDeterminant(temp);
+            result += arr[0][i] * (int)Math.pow(-1, i) * findDeterminant(temp);
         }
         return result;
     }
